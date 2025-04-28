@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechFest 2025 - The Ultimate Tech Event</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0c0c0c;
+            color: #030101;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1c1c2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: 0.3s;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #3c3cf0;
+            color: #fff;
+        }
+
+        header {
+            background-image: url('http://wallpapercave.com/wp/24UgzNL.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 2em;
+            position: relative;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: rgb(240, 242, 244);
+            padding: 20px;
+            width: auto;
+            max-width: 1500px;
+            height: 5%;
+            margin: 5px 5px;
+            border-radius: 2px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 115%;
+        }
+        .section-img {
+            flex: 1 1 35%;
+            padding: 10px;
+        }
+
+        .section-img img {
+            width: 100%;
+            max-width: 500px;
+            height: 5%;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn {
+            background: #2d34b1;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #12cbd5;
+        }
+
+        footer {
+            background: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        
+        /* Modal Styles */
+        #formModal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 200;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #formModal .form-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+        }
+
+        #formModal input, #formModal select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #formModal label {
+            font-weight: 600;
+        }
+
+        #formModal .cancel-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#technical">Technical</a>
+        <a href="#nontech">Non-Tech</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#register">Register</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h1>TechFest 2K25</h1>
+        <p><strong>Techfest 2K25</strong> is a National Level Technical Symposium organized by the <strong>ECE Association</strong> & <strong>IETE Student Forum</strong>.</p>
+        <a class="btn" onclick="openForm()">Register Now</a>
+    </header>
+
+    <div class="container">
+       
+
+        <div class="section" id="technical">
+            <div class="section-img">
+                <img src="C:\Users\Dhakshanya\Downloads\OE LAB\images\technical.png" alt="Technical">
+            </div>
+        </div>
+
+         <!-- Non-Tech Events -->
+         <div class="section" id="nontech">
+            <div class="section-img">
+                <img src="C:\Users\Dhakshanya\Downloads\OE LAB\images\non technical.png" alt="Non-Tech">
+            </div>
+        </div>
+
+        <!-- Workshops -->
+        <div class="section" id="workshops">
+            <div class="section-img">
+                <img src="c:\Users\Dhakshanya\Downloads\OE LAB\images\workshop.png" alt="Workshops">
+            </div>
+        </div>
+
+        <!-- Registration -->
+        <div class="section" id="register">
+            <div class="section-img">
+                <img src="c:\Users\Dhakshanya\Downloads\OE LAB\images\registration details.png" alt="Registration">
+            </div>
+        </div>
+
+        <!-- Rewards -->
+        <div class="section" id="rewards">
+            <div class="section-img">
+                <img src="C:\Users\Dhakshanya\Downloads\OE LAB\images\rewards.png" alt="Rewards">
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section" id="contact">
+            <div class="section-img">
+                <img src="C:\Users\Dhakshanya\Downloads\OE LAB\images\contact.png" alt="Contact">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Techfest 2K25. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Registration Form Modal -->
+    <div id="formModal">
+        <div class="form-box">
+            <h2>Registration Form</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="college">College Name:</label>
+                <input type="text" id="college" name="college" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+
+
+                <label for="event">Event Interested:</label>
+                <select id="event" name="event" required>
+                    <option value="">--Select--</option>
+                    <option value="Paper Presentation">Paper Presentation</option>
+                    <option value="Project Presentation">Project Presentation</option>
+                    <option value="Codathon">Codathon</option>
+                    <option value="Line Follower">Line Follower</option>
+                    <option value="Robo Race">Robo Race</option>
+                    <option value="Non-Tech Events">Non-Technical Events</option>
+                    <option value="Workshop">Workshop</option>
+                </select>
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="cancel-btn" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById('formModal').style.display = 'flex';
+        }
+    
+        function closeForm() {
+            document.getElementById('formModal').style.display = 'none';
+        }
+    
+        function validateForm() {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const college = document.getElementById("college").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const event = document.getElementById("event").value;
+    
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            const phonePattern = /^[0-9]{10}$/;
+    
+            if (!name || !email || !college || !phone || !event) {
+                alert("Please fill in all fields.");
+                return false;
+            }
+    
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+    
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return false;
+            }
+    
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>
